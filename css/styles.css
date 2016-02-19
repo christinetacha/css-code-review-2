@@ -1,0 +1,140 @@
+/*colors:
+dark grey: #2a363b*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/**:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}*/
+
+.navbar ul {
+  list-style: none;
+  display: inline-block;
+  font-family: 'Rock Salt', cursive;
+  color: #e65c00;
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: #2a363b;
+}
+
+.right {
+  float: right;
+  display: inline-block;
+  margin: 0;
+  padding-right: 20px;
+  margin-top: 15px;
+}
+
+.right li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.right2 {
+  float: right;
+  display: inline-block;
+  margin: 0;
+  padding-right: 20px;
+  margin-top: 15px;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+#bigBox1 {
+  width: 60%;
+  height: 60vh;
+  float: left;
+}
+
+#bigBox1 img {
+  height: 100%;
+  width: 100%;
+}
+
+#smallBox1 {
+  width: 39%;
+  height: 30vh;
+  float: right;
+  margin: 0;
+}
+
+#smallBox1 img {
+  height: 100%;
+  width: 100%;
+}
+
+#smallBox2 {
+  width: 39%;
+  height: 30vh;
+  float: right;
+}
+
+#smallBox2 img {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #bigBox1 {
+    width: 100%;
+    float: none;
+    margin: 10px;
+  }
+  #smallBox1 {
+    width: 47%;
+    float: left;
+    margin: 10px;
+  }
+  #smallBox2 {
+    width: 47%;
+    float: right;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #bigBox1 {
+    width: 100%;
+    max-height: 30vh;
+    float: none;
+    margin: 10px;
+    padding-bottom: 10px;
+  }
+  #smallBox1 {
+    width: 100%;
+    max-height: 20vh;
+    float: none;
+    margin: 10px;
+  }
+  #smallBox2 {
+    width: 100%;
+    max-height: 20vh;
+    float: none;
+    margin: 10px;
+  }
+}
